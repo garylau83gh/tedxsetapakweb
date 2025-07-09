@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.arc-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.arc-item {
+  width: 70px;
+  height: 70px;
+  background-color: #b91c1c;
+  color: white;
+  border-radius: 30% 30% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.arc-item.rotate-left     { transform: rotate(-25deg); }
+.arc-item.rotate-midleft  { transform: rotate(-12deg); }
+.arc-item.rotate-mid      { transform: rotate(0deg); }
+.arc-item.rotate-midright { transform: rotate(12deg); }
+.arc-item.rotate-right    { transform: rotate(25deg); }
+
