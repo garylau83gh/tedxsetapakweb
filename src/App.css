@@ -36,3 +36,137 @@
     transform: rotate(360deg);
   }
 }
+
+.community-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 24px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-subtext {
+  font-size: 16px;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .community-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.community-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.number-box {
+  background-color: #b91c1c;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-content h4 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.item-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ticket-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ticket-section p {
+  font-size: 16px;
+  margin-bottom: -5px; /* Reduce space below the label */
+}
+
+.ticket-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #3b82f6; /* Blue */
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.event-left {
+  flex: 1 1 60%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.event-left ul {
+  margin-left: 20px;
+}
+
+.event-right {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.venue-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.qr-box {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.qr-box p {
+  color: black;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.qr-image {
+  width: 180px;
+  height: auto;
+}

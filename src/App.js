@@ -4,7 +4,9 @@ import About from './components/About';
 import Speakers from './components/Speakers';
 import Schedule from './components/Schedule';
 import Events from './components/Events';
+import Location from './components/Location';
 import Footer from './components/Footer';
+import Connect from './components/Connect';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Speakers />
       <Schedule />
       <Events />
+      <Location />
+      <Connect />
       <Footer />
     </>
   );
