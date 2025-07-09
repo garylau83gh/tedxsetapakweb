@@ -7,9 +7,9 @@ const About = () => {
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         {/* Page Title */}
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-5">
-          About <span className="text-red-600">TED</span>
-          <span className="text-red-600 lowercase">x</span>
-          <span className="text-white">Setapak</span>
+          About                   <span className="text-red">TED</span>
+                  <span className="text-red align-x lowercase">x</span>
+                  Setapak 2025
         </h2>
 
         <p className="text-lg leading-relaxed mb-4 text-center">

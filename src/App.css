@@ -170,3 +170,31 @@
   width: 180px;
   height: auto;
 }
+
+.events-section {
+  background-color: #0f0f0f; /* Match your site’s dark theme */
+  color: #ffffff;
+  padding: 3rem 0;
+}
+
+.events-section .card {
+  background-color: #1a1a1a; /* Slightly lighter dark for contrast */
+  border: none;
+}
+
+.events-section .btn {
+  margin-top: 1rem;
+}
+
+.text-red {
+  color: #e62b1e; /* TEDx red */
+  font-weight: 700;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.align-x {
+  position: relative;
+  top: -0.2em; /* Adjust this value for best visual alignment */
+  font-size: 0.9em; /* Optional: reduce size if needed */
+}

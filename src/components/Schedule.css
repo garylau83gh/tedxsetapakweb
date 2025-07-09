@@ -59,6 +59,7 @@
 .timeline-time {
   font-weight: bold;
   font-size: 0.95rem;
+  margin-bottom: 0rem;
 }
 
 .timeline-title {
@@ -88,7 +89,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -128,7 +129,7 @@
 .timeline-line {
   position: absolute;
   top: 10rem;
-  bottom: 8rem;
+  bottom: 5rem;
   left: 50%;
   width: 2px;
   background-color: #dc2626;

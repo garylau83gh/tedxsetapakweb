@@ -4,7 +4,9 @@ import "../App.css"; // Make sure your CSS is imported here
 const Connect = () => {
   return (
     <section id="connect" className="community-section">
-      <h2 className="section-title">Join the TEDxSetapak Community</h2>
+      <h2 className="section-title">Join the                   <span className="text-red">TED</span>
+                  <span className="text-red align-x lowercase">x</span>
+                  Setapak 2025 Community</h2>
       <p className="section-subtext">
         The conversations and connections begun at TEDxSetapak need not end with our event.
         We invite you to continue mining for insights and sharing your discoveries.

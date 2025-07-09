@@ -5,7 +5,7 @@ import MaybankQR from "../image/QR.png";
 
 const Location = () => {
   return (
-    <section className="bg-dark text-white py-5">
+    <section id="location" className="bg-dark text-white py-5">
       <div className="container location-container">
         <h2 className="text-center mb-5">
           Discover inspiring talks. Get your{" "}

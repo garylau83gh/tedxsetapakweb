@@ -92,7 +92,7 @@ Because real progress doesn’t happen alone ~ it happens in motion, and in comm
 
 export default function Speakers() {
   return (
-    <section className="bg-dark text-white py-5">
+    <section id="speakers" className="bg-dark text-white py-5">
       <div className="container">
         <h2 className="text-center mb-5">Speakers</h2>
 
