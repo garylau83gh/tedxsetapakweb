@@ -1,4 +1,5 @@
 import React from "react";
+import useIsMobile from "../utils/useIsMobile";
 import "./Schedule.css";
 
 const scheduleItems = [
@@ -17,37 +18,53 @@ const scheduleItems = [
 ];
 
 const Schedule = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="schedule" className="schedule-container">
       <h2 className="schedule-title">Event Schedule</h2>
-      <div className="timeline-line" />
-      <div className="timeline">
-        <div className="timeline-grid">
+      {isMobile ? (
+        <div className="mobile-schedule">
           {scheduleItems.map((item, index) => (
-            <div key={index} className="timeline-row">
-              {index % 2 === 0 ? (
-                <>
-                  <div className="timeline-content right-align">
-                    <p className="timeline-time">{item.time}</p>
-                    <p className="timeline-title">{item.title}</p>
-                  </div>
-                  <div className="timeline-number">{index + 1}</div>
-                  <div className="timeline-empty" />
-                </>
-              ) : (
-                <>
-                  <div className="timeline-empty" />
-                  <div className="timeline-number">{index + 1}</div>
-                  <div className="timeline-content left-align">
-                    <p className="timeline-time">{item.time}</p>
-                    <p className="timeline-title">{item.title}</p>
-                  </div>
-                </>
-              )}
+            <div key={index} className="mobile-schedule-item">
+              <div className="time">{item.time}</div>
+              <div className="title">{item.title}</div>
+              <hr className="divider" />
             </div>
           ))}
         </div>
-      </div>
+      ) : (
+        <>
+          <div className="timeline-line" />
+          <div className="timeline">
+            <div className="timeline-grid">
+              {scheduleItems.map((item, index) => (
+                <div key={index} className="timeline-row">
+                  {index % 2 === 0 ? (
+                    <>
+                      <div className="timeline-content right-align">
+                        <p className="timeline-time">{item.time}</p>
+                        <p className="timeline-title">{item.title}</p>
+                      </div>
+                      <div className="timeline-number">{index + 1}</div>
+                      <div className="timeline-empty" />
+                    </>
+                  ) : (
+                    <>
+                      <div className="timeline-empty" />
+                      <div className="timeline-number">{index + 1}</div>
+                      <div className="timeline-content left-align">
+                        <p className="timeline-time">{item.time}</p>
+                        <p className="timeline-title">{item.title}</p>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 };
