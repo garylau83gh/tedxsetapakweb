@@ -85,29 +85,7 @@ const About = () => {
                 <span className="text-white fw-semibold">Setapak</span> represents our community's contribution to the global movement of <em>ideas worth spreading</em>.
                 Taking inspiration from the historic mining industry, we seek to extract valuable insights from diverse speakers and perspectives.
               </p>
-
-              <p className="mb-0" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
-                Our theme <strong>M.I.N.E.S</strong> reflects our belief that each individual possesses unique treasures that, when shared,
-                can enrich society. Join us as we explore innovative approaches to <strong>Mindset, Investment, Networking, Environment</strong>,
-                and <strong>Sustainability</strong>.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* === M.I.N.E.S Section === */}
-      <section className="bg-black text-white py-5">
-        <div className="container">
-          <h2 className="text-center display-5 fw-bold fs-3 mb-4">The M.I.N.E.S Framework</h2>
-
-          <div className="text-center">
-            <img
-              src={MINESImage}
-              alt="The M.I.N.E.S Framework"
-              className="img-fluid rounded shadow"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
           </div>
         </div>
       </section>

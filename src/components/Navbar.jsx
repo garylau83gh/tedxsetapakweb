@@ -91,6 +91,11 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
+            <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("team"); }}>
+              Team
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("connect"); }}>
               Connect With Us
             </a>

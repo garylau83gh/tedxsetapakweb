@@ -12,6 +12,8 @@ import Connect from "./components/Connect";
 import Footer from "./components/Footer";
 import Schedule from "./components/Schedule";
 import Location from "./components/Location";
+import Theme from "./components/Theme";
+import Team from "./components/Team";
 
 function ScrollToAnchor() {
   const { hash } = useLocation();
@@ -39,6 +41,7 @@ function HomePage() {
       <Hero />
       <About />
       <Events />
+      <Team />
       <Connect />
       <Footer />
     </>
@@ -52,6 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/event" element={<EventLayout />}>
+          <Route path="theme" element={<Theme />} />
           <Route path="speakers" element={<Speakers />} />
           <Route path="schedule" element={<Schedule />} />
           <Route path="location" element={<Location />} />

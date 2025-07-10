@@ -37,6 +37,9 @@ export default function EventLayout() {
           <div className="collapse navbar-collapse justify-content-end" id="navbarEvent">
             <ul className="navbar-nav">
               <li className="nav-item">
+                <Link className="nav-link text-white" to="/event/theme">Theme</Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link text-white" to="/event/speakers">Speakers</Link>
               </li>
               <li className="nav-item">
