@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tedxsetapakweb/static/css/main.ccadf42e.css",
-    "main.js": "/tedxsetapakweb/static/js/main.21df0ab0.js",
+    "main.js": "/tedxsetapakweb/static/js/main.e22cdb9a.js",
     "static/media/spash_00.jpg": "/tedxsetapakweb/static/media/spash_00.c0ea623c3f183f1d71bf.jpg",
     "static/media/spash_01.jpg": "/tedxsetapakweb/static/media/spash_01.e59eb7fed1d2d5f1e28d.jpg",
     "static/media/spash_02.jpg": "/tedxsetapakweb/static/media/spash_02.fa3b5e7e603703c080db.jpg",
@@ -19,10 +19,10 @@
     "static/media/zhen.png": "/tedxsetapakweb/static/media/zhen.11163f88aece52123ba4.png",
     "index.html": "/tedxsetapakweb/index.html",
     "main.ccadf42e.css.map": "/tedxsetapakweb/static/css/main.ccadf42e.css.map",
-    "main.21df0ab0.js.map": "/tedxsetapakweb/static/js/main.21df0ab0.js.map"
+    "main.e22cdb9a.js.map": "/tedxsetapakweb/static/js/main.e22cdb9a.js.map"
   },
   "entrypoints": [
     "static/css/main.ccadf42e.css",
-    "static/js/main.21df0ab0.js"
+    "static/js/main.e22cdb9a.js"
   ]
 }
