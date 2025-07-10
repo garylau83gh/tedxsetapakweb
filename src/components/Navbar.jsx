@@ -1,6 +1,32 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const isHome = location.pathname === "/" || location.pathname === "/tedxsetapakweb/" || location.hash === "#/";
+
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // If not on homepage, navigate first, then scroll
+      navigate("/");
+      setTimeout(() => {
+        const tryScroll = () => {
+          const elAfter = document.getElementById(id);
+          if (elAfter) {
+            elAfter.scrollIntoView({ behavior: "smooth" });
+          }
+        };
+        // retry scroll in case the element is rendered after delay
+        setTimeout(tryScroll, 500);
+      }, 100);
+    }
+  };
+
   return (
     <nav
       style={{ backgroundColor: "#E62B1E" }}
@@ -17,7 +43,7 @@ export default function Navbar() {
               marginLeft: "2px",
               position: "relative",
               top: "-0.3rem",
-              textTransform: "lowercase"
+              textTransform: "lowercase",
             }}
           >
             x
@@ -26,7 +52,7 @@ export default function Navbar() {
             style={{
               fontWeight: 300,
               fontSize: "1.5rem",
-              marginLeft: "2px"
+              marginLeft: "2px",
             }}
           >
             Setapak
@@ -47,30 +73,31 @@ export default function Navbar() {
         </button>
 
         {/* Nav Links */}
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#speakers">
-                Speakers
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#events">
-                Events
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#connect">
-                Connect With Us
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ms-auto text-end">
+          <li className="nav-item">
+            <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("about"); }}>
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("speakers"); }}>
+              Speakers
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("events"); }}>
+              Events
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-white" href="#" onClick={(e) => { e.preventDefault(); handleScroll("connect"); }}>
+              Connect With Us
+            </a>
+          </li>
+        </ul>
+      </div>
+
       </div>
     </nav>
   );

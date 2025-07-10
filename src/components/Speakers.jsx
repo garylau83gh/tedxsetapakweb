@@ -92,33 +92,32 @@ Because real progress doesn’t happen alone ~ it happens in motion, and in comm
 
 export default function Speakers() {
   return (
-    <section id="speakers" className="bg-dark text-white py-5">
-      <div className="container">
-        <h2 className="text-center mb-5">Speakers</h2>
+<section id="speakers" style={{ backgroundColor: "#000" }} className="text-white py-5">
+  <div className="container">
+    <h2 className="text-center mb-5">Speakers</h2>
 
-        <div className="row justify-content-center g-4">
-          {speakers.map((speaker, index) => (
-            <div className="col-md-6 col-lg-4 d-flex" key={index}>
-              <div className="card profile-card shadow bg-light text-dark w-100 h-100">
-                <div className="card-body text-center d-flex flex-column">
-                  <img
-                    src={speaker.image}
-                    alt={speaker.name}
-                    className="rounded-circle mb-3 mx-auto"
-                    style={{ width: "100px", height: "100px", objectFit: "cover" }}
-                  />
-<h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
-<p className="text-sm text-purple-600 font-medium mb-1">{speaker.role}</p>
-<h5 className="text-base font-semibold text-gray-800">{speaker.title}</h5>
-<p className="text-sm small text-gray-600 mt-2">{speaker.description}</p>
-
-                </div>
-              </div>
+    <div className="row justify-content-center g-4">
+      {speakers.map((speaker, index) => (
+        <div className="col-md-6 col-lg-4 d-flex" key={index}>
+          <div className="card profile-card shadow bg-light text-dark w-100 h-100">
+            <div className="card-body text-center d-flex flex-column">
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="rounded-circle mb-3 mx-auto"
+                style={{ width: "100px", height: "100px", objectFit: "cover" }}
+              />
+              <h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
+              <p className="text-sm text-purple-600 font-medium mb-1">{speaker.role}</p>
+              <h5 className="text-base font-semibold text-gray-800">{speaker.title}</h5>
+              <p className="text-sm small text-gray-600 mt-2">{speaker.description}</p>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 }
 
