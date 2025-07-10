@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import EventLayout from './components/EventLayout'; // new
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -27,7 +27,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router basename="/tedxsetapakweb">
+    <Router>
       <Routes>
         <Route path="/" element={/* homepage layout */ <HomePage />} />
         <Route path="/event" element={<EventLayout />}>

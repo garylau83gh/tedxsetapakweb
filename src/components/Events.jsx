@@ -24,22 +24,12 @@ export default function Events() {
                   <strong>Tunku Abdul Rahman University of Management and Technology (TAR UMT), KL</strong> <br /><br />
                   Join us for a day filled with inspiring talks, fresh ideas, and meaningful connections. Featuring 9 incredible speakers and interactive sessions. Don’t miss out!
                 </p>
-<a
-  href={`${process.env.PUBLIC_URL}/event/schedule`}
-  className="btn btn-danger me-2"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View Schedule
-</a>
-<a
-  href={`${process.env.PUBLIC_URL}/event/location`}
-  className="btn btn-outline-light"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View Location
-</a>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => window.open(`${window.location.origin}/#/event/speakers`, '_blank')}
+                  >
+                    View Event
+                  </button>
               </div>
             </div>
           </div>
