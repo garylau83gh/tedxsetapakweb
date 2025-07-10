@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tedxsetapakweb/static/css/main.e81a8ba1.css",
-    "main.js": "/tedxsetapakweb/static/js/main.540fa848.js",
+    "main.css": "/tedxsetapakweb/static/css/main.cae984ec.css",
+    "main.js": "/tedxsetapakweb/static/js/main.4af09f66.js",
     "static/media/spash_00.jpg": "/tedxsetapakweb/static/media/spash_00.c0ea623c3f183f1d71bf.jpg",
     "static/media/spash_01.jpg": "/tedxsetapakweb/static/media/spash_01.e59eb7fed1d2d5f1e28d.jpg",
     "static/media/spash_02.jpg": "/tedxsetapakweb/static/media/spash_02.fa3b5e7e603703c080db.jpg",
@@ -19,11 +19,11 @@
     "static/media/QR.png": "/tedxsetapakweb/static/media/QR.061c25dc97e36775134a.png",
     "static/media/zhen.png": "/tedxsetapakweb/static/media/zhen.11163f88aece52123ba4.png",
     "index.html": "/tedxsetapakweb/index.html",
-    "main.e81a8ba1.css.map": "/tedxsetapakweb/static/css/main.e81a8ba1.css.map",
-    "main.540fa848.js.map": "/tedxsetapakweb/static/js/main.540fa848.js.map"
+    "main.cae984ec.css.map": "/tedxsetapakweb/static/css/main.cae984ec.css.map",
+    "main.4af09f66.js.map": "/tedxsetapakweb/static/js/main.4af09f66.js.map"
   },
   "entrypoints": [
-    "static/css/main.e81a8ba1.css",
-    "static/js/main.540fa848.js"
+    "static/css/main.cae984ec.css",
+    "static/js/main.4af09f66.js"
   ]
 }
