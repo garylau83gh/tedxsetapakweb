@@ -9,6 +9,7 @@ import Weekien from "../image/weekien.png";
 import Kim from "../image/kim.png";
 import Mannisa from "../image/mannisa.png";
 import Clement from "../image/clementong.png";
+import Sharon from "../image/sharon.png";
 
 const speakers = [
   {
@@ -87,6 +88,14 @@ Her mission? To empower you to live a little better, one self-discovery at a tim
   description: `Ken Ang Wee Kien knows that your brand doesn’t begin when you feel ready ~ it begins the moment you take action.
 His message? Shift from thinking to doing, and surround yourself with people who push you to grow.
 Because real progress doesn’t happen alone ~ it happens in motion, and in community.`
+},{
+  name: "Sharon Foo Lee Chin",
+  role: "Speaker",
+  image: Sharon,
+  title: "Everything Everywhere All At Once … Overwhelmed Moms",
+  description: `Sharon Foo Lee Chin advocates for a healthier, happier world ~ starting with you.
+Her message is simple yet powerful: Don’t over-jam your schedule. Pause. Breathe. Make space for self-love, because the greatest gift you can give your family is a healthy, joyful you.
+It’s not just about work-life balance ~ it’s about work-life harmony.`
 }
 ];
 
