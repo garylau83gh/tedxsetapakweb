@@ -198,3 +198,7 @@
   top: -0.2em; /* Adjust this value for best visual alignment */
   font-size: 0.9em; /* Optional: reduce size if needed */
 }
+
+html {
+  scroll-behavior: smooth;
+}
