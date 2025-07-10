@@ -23,31 +23,30 @@ const Schedule = () => {
       <div className="timeline-line" />
       <div className="timeline">
         <div className="timeline-grid">
-  {scheduleItems.map((item, index) => (
-    <div key={index} className="timeline-row">
-      {index % 2 === 0 ? (
-        <>
-          <div className="timeline-content right-align">
-            <p className="timeline-time">{item.time}</p>
-            <p className="timeline-title">{item.title}</p>
-          </div>
-          <div className="timeline-number">{index + 1}</div>
-          <div className="timeline-empty" />
-        </>
-      ) : (
-        <>
-          <div className="timeline-empty" />
-          <div className="timeline-number">{index + 1}</div>
-          <div className="timeline-content left-align">
-            <p className="timeline-time">{item.time}</p>
-            <p className="timeline-title">{item.title}</p>
-          </div>
-        </>
-      )}
-    </div>
-  ))}
-</div>
-
+          {scheduleItems.map((item, index) => (
+            <div key={index} className="timeline-row">
+              {index % 2 === 0 ? (
+                <>
+                  <div className="timeline-content right-align">
+                    <p className="timeline-time">{item.time}</p>
+                    <p className="timeline-title">{item.title}</p>
+                  </div>
+                  <div className="timeline-number">{index + 1}</div>
+                  <div className="timeline-empty" />
+                </>
+              ) : (
+                <>
+                  <div className="timeline-empty" />
+                  <div className="timeline-number">{index + 1}</div>
+                  <div className="timeline-content left-align">
+                    <p className="timeline-time">{item.time}</p>
+                    <p className="timeline-title">{item.title}</p>
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
