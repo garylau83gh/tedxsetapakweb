@@ -1,49 +1,117 @@
 import React from "react";
+import Background from "../image/spash_01.jpg"; 
+import Splash02 from "../image/spash_02.jpg"; 
 import MINESImage from "../image/MINES.png";
 
 const About = () => {
   return (
-    <section id="about" className="bg-black text-white py-5 font-sans">
-      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        {/* Page Title */}
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-5">
-          About                   <span className="text-red">TED</span>
+    <>
+      {/* === Background with fade and overlayed text === */}
+      <section id="about" className="bg-black text-white py-5">
+        <div
+          className="container position-relative rounded overflow-hidden"
+          style={{
+            backgroundImage: `url(${Background})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Right side gradient fade */}
+          <div
+            className="position-absolute top-0 start-0 h-100"
+            style={{
+              width: "100%",
+              background: "linear-gradient(to left, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.3) 75%, transparent 100%)",
+              zIndex: 1,
+            }}
+          ></div>
+
+          <div className="row justify-content-end" style={{ position: "relative", zIndex: 2 }}>
+            <div className="col-md-6 py-5 px-4">
+              <h2 className="fw-bold mb-3">
+                About <span className="text-red">TED</span>
                   <span className="text-red align-x lowercase">x</span>
-                  Setapak 2025
-        </h2>
-
-        <p className="text-lg leading-relaxed mb-4 text-center">
-          <span className="text-red-600 font-semibold">TED</span>
-          <span className="text-red-600 lowercase font-semibold">x</span>
-          <span className="text-white font-semibold">Setapak</span> represents our community's contribution to the global movement of <em>ideas worth spreading</em>.
-          Taking inspiration from the historic mining industry, we seek to extract valuable insights from diverse speakers and perspectives.
-        </p>
-
-        <p className="text-lg leading-relaxed mb-10 text-center">
-          Our theme <strong>M.I.N.E.S</strong> reflects our belief that each individual possesses unique treasures that, when shared,
-          can enrich society. Join us as we explore innovative approaches to <strong>Mindset, Investment, Networking, Environment</strong>,
-          and <strong>Sustainability</strong>.
-        </p>
-
-        <hr className="border-t border-white my-12" />
-
-        {/* Framework Title */}
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-5">
-          The <span className="text-white">M.I.N.E.S</span> Framework
-        </h2>
-
-        <div className="text-center">
-          <img
-            src={MINESImage}
-            alt="The M.I.N.E.S Framework"
-            className="img-fluid rounded-lg shadow-lg"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
+              </h2>
+              <h5 className="fw-semibold mb-3">x = independently organized event</h5>
+              <p className="lead mb-3" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                In the spirit of discovering and spreading ideas, TEDx is a program of local,
+                self-organized events that bring people together to share a TED-like experience.
+                At a TEDx event, TED Talks video and live speakers combine to spark deep
+                discussion and connection.
+              </p>
+              <p className="lead mb-0" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                These local, self-organized events are branded TEDx, where x = independently
+                organized TED event. The TED Conference provides general guidance for the TEDx
+                program, but individual TEDx events are self-organized.
+                <span className="fst-italic"> (Subject to certain rules and regulations.)</span>
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <hr className="border-t border-white my-12" />
-      </div>
-    </section>
+      {/* === Updated M.I.N.E.S Section with Background and Left Text === */}
+      <section className="bg-black text-white py-5">
+        <div
+          className="container position-relative rounded overflow-hidden"
+          style={{
+            backgroundImage: `url(${Splash02})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Right-side fade effect */}
+          <div
+            className="position-absolute top-0 start-0 h-100"
+            style={{
+              width: "100%",
+              background: "linear-gradient(to right, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.3) 75%, transparent 100%)",
+              zIndex: 1,
+            }}
+          ></div>
+
+          {/* Text aligned left */}
+          <div className="row justify-content-start" style={{ position: "relative", zIndex: 2 }}>
+            <div className="col-md-6 py-5 px-4">
+              <h2 className="fw-bold fs-3 mb-4">
+                What is                   <span className="text-red">TED</span>
+                  <span className="text-red align-x lowercase">x</span>
+                <span className="text-white">Setapak</span>?
+              </h2>
+
+              <p className="mb-3" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                  <span className="text-red">TED</span>
+                  <span className="text-red align-x lowercase">x</span>
+                <span className="text-white fw-semibold">Setapak</span> represents our community's contribution to the global movement of <em>ideas worth spreading</em>.
+                Taking inspiration from the historic mining industry, we seek to extract valuable insights from diverse speakers and perspectives.
+              </p>
+
+              <p className="mb-0" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                Our theme <strong>M.I.N.E.S</strong> reflects our belief that each individual possesses unique treasures that, when shared,
+                can enrich society. Join us as we explore innovative approaches to <strong>Mindset, Investment, Networking, Environment</strong>,
+                and <strong>Sustainability</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === M.I.N.E.S Section === */}
+      <section className="bg-black text-white py-5">
+        <div className="container">
+          <h2 className="text-center display-5 fw-bold fs-3 mb-4">The M.I.N.E.S Framework</h2>
+
+          <div className="text-center">
+            <img
+              src={MINESImage}
+              alt="The M.I.N.E.S Framework"
+              className="img-fluid rounded shadow"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

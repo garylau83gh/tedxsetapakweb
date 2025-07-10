@@ -1,26 +1,43 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Speakers from './components/Speakers';
-import Schedule from './components/Schedule';
-import Events from './components/Events';
-import Location from './components/Location';
-import Footer from './components/Footer';
-import Connect from './components/Connect';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import EventLayout from './components/EventLayout'; // new
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Speakers from "./components/Speakers";
+import Events from "./components/Events";
+import Connect from "./components/Connect";
+import Footer from "./components/Footer";
+import Schedule from "./components/Schedule";
+import Location from "./components/Location";
 
-function App() {
+// Wrap homepage content in a separate component
+function HomePage() {
   return (
     <>
       <Navbar />
       <Hero />
       <About />
-      <Speakers />
-      <Schedule />
       <Events />
-      <Location />
       <Connect />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router basename="/tedxsetapakweb">
+      <Routes>
+        <Route path="/" element={/* homepage layout */ <HomePage />} />
+        <Route path="/event" element={<EventLayout />}>
+          <Route path="speakers" element={<Speakers />} />
+          <Route path="schedule" element={<Schedule />} />
+          <Route path="location" element={<Location />} />
+        </Route>
+        <Route path="*" element={<div style={{ color: "white" }}>404 - Not Found</div>} />
+      </Routes>
+    </Router>
   );
 }
 

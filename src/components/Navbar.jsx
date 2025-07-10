@@ -26,9 +26,6 @@ export default function Navbar() {
                 <a className="nav-link text-white" href="#speakers">Speakers</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white" href="#schedule">Schedule</a>
-            </li>
-            <li className="nav-item">
                 <a className="nav-link text-white" href="#events">Events</a>
             </li>
             <li className="nav-item">
