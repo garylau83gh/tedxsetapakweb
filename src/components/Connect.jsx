@@ -1,12 +1,11 @@
 import React from "react";
-import "../App.css"; // Make sure your CSS is imported here
+import "../App.css";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Connect = () => {
   return (
     <section id="connect" className="community-section">
-      <h2 className="section-title">Join the                   <span className="text-red">TED</span>
-                  <span className="text-red align-x lowercase">x</span>
-                  Setapak 2025 Community</h2>
+      <h2 className="section-title">Join the TEDxSetapak Community</h2>
       <p className="section-subtext">
         The conversations and connections begun at TEDxSetapak need not end with our event.
         We invite you to continue mining for insights and sharing your discoveries.
@@ -20,7 +19,7 @@ const Connect = () => {
           <div className="item-content">
             <h4>Follow Our Journey</h4>
             <p>
-              Connect with us on social media <strong>@TEDxSetapak</strong> to stay updated
+              Connect with us on social media to stay updated
               on future events and community initiatives.
             </p>
           </div>
@@ -30,9 +29,9 @@ const Connect = () => {
         <div className="community-item">
           <div className="number-box">2</div>
           <div className="item-content">
-            <h4>Become a Miner</h4>
+            <h4>Get Involved</h4>
             <p>
-              Volunteer for future TEDxSetapak events and help us unearth more ideas worth spreading.
+              Volunteer for future TEDxSetapak events and be part of something impactful.
             </p>
           </div>
         </div>
@@ -49,19 +48,25 @@ const Connect = () => {
         </div>
       </div>
 
-      {/* Ticket link */}
-    <div className="ticket-section">
-    <p><strong>Get Your Ticket:</strong></p>
-    <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfQ3iajJcPwxYVJ13g20PoT6t0PRhyPp8skPPysLwVm_DiLg/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ticket-link"
-    >
-        Fill out the registration form here
-    </a>
-    </div>
+      {/* Social Media Icons */}
+      <div className="social-icons" style={{ marginTop: "2rem", textAlign: "center" }}>
+        <a href="https://www.facebook.com/TEDxSetapak" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", fontSize: "2rem", color: "#4267B2" }}>
+          <span style={{ margin: "0 10px", fontSize: "3rem" }}>
+          <FaFacebook />
+          </span>
+        </a>
+        <a href="https://www.instagram.com/TEDxSetapak" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", fontSize: "2rem", color: "#C13584" }}>
+          <span style={{ margin: "0 10px", fontSize: "3rem" }}>
+            <FaInstagram />
+            </span>
+        </a>
+        <a href="https://www.youtube.com/@TEDxSetapak" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", fontSize: "2rem", color: "#FF0000" }}>
+          <span style={{ margin: "0 10px", fontSize: "3rem", color: "#888", cursor: "not-allowed" }} title="YouTube coming soon">
+            <FaYoutube />
+          </span>
 
+        </a>
+      </div>
     </section>
   );
 };

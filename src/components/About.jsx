@@ -29,8 +29,7 @@ const About = () => {
           <div className="row justify-content-end" style={{ position: "relative", zIndex: 2 }}>
             <div className="col-md-6 py-5 px-4">
               <h2 className="fw-bold mb-3">
-                About <span className="text-red">TED</span>
-                  <span className="text-red align-x lowercase">x</span>
+                About TEDx
               </h2>
               <h5 className="fw-semibold mb-3">x = independently organized event</h5>
               <p className="lead mb-3" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
@@ -74,17 +73,14 @@ const About = () => {
           <div className="row justify-content-start" style={{ position: "relative", zIndex: 2 }}>
             <div className="col-md-6 py-5 px-4">
               <h2 className="fw-bold fs-3 mb-4">
-                What is                   <span className="text-red">TED</span>
-                  <span className="text-red align-x lowercase">x</span>
-                <span className="text-white">Setapak</span>?
+                What is TEDxSetapak?
               </h2>
 
-              <p className="mb-3" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
-                  <span className="text-red">TED</span>
-                  <span className="text-red align-x lowercase">x</span>
-                <span className="text-white fw-semibold">Setapak</span> represents our community's contribution to the global movement of <em>ideas worth spreading</em>.
-                Taking inspiration from the historic mining industry, we seek to extract valuable insights from diverse speakers and perspectives.
-              </p>
+<p className="mb-3" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+  TEDxSetapak represents our community's contribution to the global movement where <em>Ideas Change Everything</em>.
+  We bring together diverse speakers and perspectives to spark conversations, inspire action, and create meaningful change.
+</p>
+
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Splash00 from "../image/spash_00.jpg"; // Adjust path if needed
+import Splash00 from "../image/spash_00.jpg";
 
 export default function Hero() {
   return (
@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="container">
         <div
           className="position-relative rounded overflow-hidden"
-          style={{ height: "450px" }} // Smaller height here
+          style={{ height: "450px" }}
         >
           <img
             src={Splash00}
@@ -16,6 +16,7 @@ export default function Hero() {
             style={{ objectFit: "cover", filter: "brightness(0.7)" }}
           />
 
+          {/* Gradient overlay */}
           <div
             className="position-absolute top-0 start-0 w-100 h-100"
             style={{
@@ -24,37 +25,21 @@ export default function Hero() {
             }}
           />
 
+          {/* Foreground content */}
           <div
             className="position-absolute top-0 start-0 h-100 d-flex align-items-center"
-            style={{ zIndex: 2, padding: "1rem" }} // Adjust padding to fit height
+            style={{ zIndex: 2, padding: "1rem" }}
           >
             <div className="text-start text-white">
-              <h2 className="mb-1">
-                <span style={{ fontWeight: 800, color: '#E62B1E' }}>TED</span>
-                <span style={{
-                  fontWeight: 700,
-                  color: '#E62B1E',
-                  marginLeft: '4px',
-                  position: 'relative',
-                  top: '-0.4rem',
-                  fontSize: '1.5rem'
-                }}>x</span>
-                <span style={{
-                  fontWeight: 300,
-                  color: 'white',
-                  marginLeft: '8px'
-                }}>Setapak</span>
-              </h2>
+              <p className="mb-1" style={{ fontSize: "1.9rem" }}>Welcome to</p>
 
-              <small style={{ fontSize: '0.85rem' }}>
-                <span style={{ color: '#E62B1E' }}>x</span>
-                <span style={{ color: 'white' }}> = independently organized TED event</span>
-              </small>
+              <h1 className="mb-2" style={{ fontSize: "3.5rem", fontWeight: "600" }}>
+                TEDxSetapak
+              </h1>
 
-              <p className="mb-2" style={{ fontSize: '0.95rem' }}>
-                Unearthing Ideas Worth Spreading
+              <p className="mb-3" style={{ fontSize: "0.95rem" }}>
+                Where Ideas Change Everything
               </p>
-
               <button
                 className="btn btn-outline-light btn-sm"
                 onClick={() => {

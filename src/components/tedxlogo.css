@@ -1,0 +1,38 @@
+/* src/components/TEDxLogo.css */
+
+.tedx-logo-container {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: black;
+  line-height: 1.1;
+}
+
+.tedx-main {
+  font-size: 2rem;
+  font-weight: normal;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.ted {
+  font-weight: 800;
+  color: #E62B1E; /* TED Red */
+}
+
+.x {
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.location {
+  font-weight: 400;
+  color: black;
+}
+
+.tedx-tagline {
+  font-size: 0.65rem;
+  color: #555;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  font-weight: 400;
+}

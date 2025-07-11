@@ -2,8 +2,10 @@ import React from "react";
 import "./Team.css";
 import GroupPhoto from "../image/group2.png"; 
 import Speaker1 from "../image/blank.png"; 
-import Weining from "../image/weining.png";
-import Gary from "../image/gary.png";
+import Weining from "../image/weining3.png";
+import Gary from "../image/gary3.png";
+import Chelsey from "../image/chelsey3.png";
+import Patricia from "../image/patricia3.png";
 
 // Example images – replace with actual paths
 /* import CheanFai from "../image/team/cheanfai.png";
@@ -29,7 +31,7 @@ const teamMembers = [
   {
     name: "Patricia Lim",
     role: "Communication & Marketing",
-    image: Speaker1
+    image: Patricia
   },
   {
     name: "Elaine Soo",
@@ -49,7 +51,7 @@ const teamMembers = [
   {
     name: "Chelsey Siew",
     role: "Executive Producer",
-    image: Speaker1
+    image: Chelsey
   },
   {
     name: "Gary Lau",
@@ -89,11 +91,12 @@ export default function Team() {
           {/* Right text */}
           <div className="col-md-6 text-white">
             <h4 className="fw-bold mb-3">Who’s Behind TEDxSetapak?</h4>
-            <p className="mb-0">
-              <strong>TEDxSetapak</strong> is organized by a passionate team of volunteers from
-              Toastmasters. Every detail — from planning to execution — is driven by their
-              dedication to sharing <em>ideas worth spreading</em> with the community.
-            </p>
+<p className="mb-0">
+  <strong>TEDxSetapak</strong> is organized by a passionate team of volunteers from
+  Toastmasters. Every detail - from planning to execution - is driven by their
+  dedication to creating an experience where <em>Ideas Change Everything</em> for the community.
+</p>
+
           </div>
         </div>
 
