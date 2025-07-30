@@ -17,3 +17,8 @@
 .team-photo:hover {
   transform: scale(1.5) !important;
 }
+
+.img-fluid {
+  max-height: 100px;
+  object-fit: contain;
+}

@@ -14,6 +14,7 @@ import Schedule from "./components/Schedule";
 import Location from "./components/Location";
 import Theme from "./components/Theme";
 import Team from "./components/Team";
+import Sponsors from "./components/Sponsors";
 
 function ScrollToAnchor() {
   const { hash } = useLocation();
@@ -42,6 +43,7 @@ function HomePage() {
       <About />
       <Events />
       <Team />
+      <Sponsors />
       <Connect />
       <Footer />
     </>
