@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tedxsetapakweb/static/css/main.4241a90f.css",
-    "main.js": "/tedxsetapakweb/static/js/main.0494fce9.js",
+    "main.js": "/tedxsetapakweb/static/js/main.b516c809.js",
     "static/media/weining_formal.png": "/tedxsetapakweb/static/media/weining_formal.c96b499b790b1d5da38e.png",
     "static/media/group2.png": "/tedxsetapakweb/static/media/group2.b312ba3f974c0088f93a.png",
     "static/media/spash_00.jpg": "/tedxsetapakweb/static/media/spash_00.c0ea623c3f183f1d71bf.jpg",
@@ -32,10 +32,10 @@
     "static/media/zhen.png": "/tedxsetapakweb/static/media/zhen.11163f88aece52123ba4.png",
     "index.html": "/tedxsetapakweb/index.html",
     "main.4241a90f.css.map": "/tedxsetapakweb/static/css/main.4241a90f.css.map",
-    "main.0494fce9.js.map": "/tedxsetapakweb/static/js/main.0494fce9.js.map"
+    "main.b516c809.js.map": "/tedxsetapakweb/static/js/main.b516c809.js.map"
   },
   "entrypoints": [
     "static/css/main.4241a90f.css",
-    "static/js/main.0494fce9.js"
+    "static/js/main.b516c809.js"
   ]
 }
