@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="container">
         <div
           className="position-relative rounded overflow-hidden"
-          style={{ height: "450px" }}
+          style={{ height: "250px" }}
         >
           <img
             src={Splash00}
@@ -33,9 +33,17 @@ export default function Hero() {
             <div className="text-start text-white">
               <p className="mb-1" style={{ fontSize: "1.9rem" }}>Welcome to</p>
 
-              <h1 className="mb-2" style={{ fontSize: "3.5rem", fontWeight: "600" }}>
-                TEDxSetapak
-              </h1>
+                <h1
+                  className="mb-2"
+                  style={{
+                    fontWeight: "600",
+                    fontSize: "clamp(2rem, 6vw, 3.5rem)", // Responsive sizing
+                    lineHeight: "1.2",
+                    wordBreak: "break-word"
+                  }}
+                >
+                  TEDxSetapak
+                </h1>
 
               <p className="mb-3" style={{ fontSize: "0.95rem" }}>
                 Where Ideas Change Everything

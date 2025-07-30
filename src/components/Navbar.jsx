@@ -92,18 +92,6 @@ export default function Navbar() {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  handleScroll("speakers");
-                }}
-              >
-                Speakers
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link text-white"
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
                   handleScroll("events");
                 }}
               >

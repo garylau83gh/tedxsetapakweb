@@ -12,6 +12,9 @@ import Cheanfai from "../image/cheanfai.png";
 import Arafah from "../image/arafah.png"; */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+
 
 // formal attire
 import Weining from "../image/weining_formal.png";
@@ -28,49 +31,73 @@ const teamMembers = [
     name: "Soh Chean Fai",
     role: "Team Lead",
     image: Cheanfai,
-  email: "gary@example.com"
+    email: "cheanfai@yahoo.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Arafah",
     role: "Co-Curator",
     image: Arafah,
-  email: "gary@example.com"
+    email: "arafahzaharah@gmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Patricia Lim",
     role: "Communication & Marketing",
     image: Patricia,
-  email: "gary@example.com"
+    email: "pat.limhuipeng@gmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Elaine Soo",
     role: "Communication & Marketing",
     image: Elaine,
-  email: "elainemarmora@gmail.com"
+    email: "elainemarmora@gmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Loh Wei Ning",
     role: "Host",
     image: Weining,
-  email: "gary@example.com"
+    email: "",
+    linkedin: "",
+    facebook: "https://www.facebook.com/share/175ChUq826/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/im.weining/"
   },
   {
     name: "Samantha Yong",
     role: "Event Manager",
     image: Samantha,
-  email: "samanthayong_1026@hotmail.com"
+    email: "samanthayong_1026@hotmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Chelsey Siew",
     role: "Executive Producer",
     image: Chelsey,
-  email: "gary@example.com"
+    email: "valentine.remix.one@gmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   },
   {
     name: "Gary Lau",
     role: "Web Manager",
     image: Gary,
-  email: "garylau.80s@gmail.com"
+    email: "garylau.80s@gmail.com",
+    linkedin: "",
+    facebook: "",
+    instagram: ""
   }
 ];
 
@@ -90,16 +117,30 @@ export default function Team() {
               />
               <h5 className="fw-semibold mb-1">{member.name}</h5>
               <p className="small text-white">{member.role}</p>
-              {member.email && (
-                <a
-                  href={`mailto:${member.email}`}
-                  className="d-block mb-2"
-                  style={{ color: "#fff" }}
-                >
-                  {/* Option B: FontAwesome icon */}
-                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
-                </a>
-              )}
+                {(member.email || member.linkedin || member.facebook || member.instagram) && (
+                  <div className="d-flex justify-content-center gap-3">
+                    {member.email && (
+                      <a href={`mailto:${member.email}`} style={{ color: "#fff" }}>
+                        <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                      </a>
+                    )}
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                        <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+                      </a>
+                    )}
+                    {member.facebook && (
+                      <a href={member.facebook} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                        <FontAwesomeIcon icon={faFacebookF} size="lg" />
+                      </a>
+                    )}
+                    {member.instagram && (
+                      <a href={member.instagram} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                        <FontAwesomeIcon icon={faInstagram} size="lg" />
+                      </a>
+                    )}
+                  </div>
+                )}
             </div>
           ))}
         </div>

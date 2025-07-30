@@ -39,7 +39,6 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <Hero />
       <About />
       <Events />
       <Team />

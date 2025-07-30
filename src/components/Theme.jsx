@@ -46,12 +46,17 @@ const Theme = () => {
           <h2 className="text-center display-5 fw-bold fs-3 mb-4">The M.I.N.E.S Framework</h2>
 
           <div className="text-center">
-            <img
-              src={MINESImage}
-              alt="The M.I.N.E.S Framework"
-              className="img-fluid rounded shadow"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
+<img
+  src={MINESImage}
+  alt="The M.I.N.E.S Framework"
+  className="rounded shadow mx-auto d-block"
+  style={{
+    width: "100%",
+    maxWidth: "1000px",    // Force larger size
+    height: "auto",
+    imageRendering: "auto" // You can try 'pixelated' or 'crisp-edges' for different effects
+  }}
+/>
           </div>
         </div>
       </section>
