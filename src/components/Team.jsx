@@ -32,7 +32,7 @@ const teamMembers = [
     role: "Team Lead",
     image: Cheanfai,
     email: "cheanfai@yahoo.com",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/cheanfai-soh-8638141aa/",
     facebook: "",
     instagram: ""
   },
@@ -95,7 +95,7 @@ const teamMembers = [
     role: "Web Manager",
     image: Gary,
     email: "garylau.80s@gmail.com",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/gary-lau-3449a8275/",
     facebook: "",
     instagram: ""
   }
