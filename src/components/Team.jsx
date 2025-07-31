@@ -56,7 +56,7 @@ const teamMembers = [
   },
   {
     name: "Elaine Soo",
-    role: "Communication & Marketing",
+    role: "Designer and Visual Director",
     image: Elaine,
     email: "elainemarmora@gmail.com",
     linkedin: "",
@@ -85,9 +85,9 @@ const teamMembers = [
     name: "Chelsey Siew",
     role: "Executive Producer",
     image: Chelsey,
-    email: "valentine.remix.one@gmail.com",
-    linkedin: "",
-    facebook: "",
+    email: "",
+    linkedin: "http://linkedin.com/in/chelseysiew",
+    facebook: "https://www.facebook.com/chelsey.siew",
     instagram: ""
   },
   {
