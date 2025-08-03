@@ -1,5 +1,6 @@
 // src/components/Events.jsx
 import "../App.css"; // or import Events.css if you separated styles
+import EventMines from "../image/event_mines.png";
 
 export default function Events() {
   return (
@@ -7,12 +8,18 @@ export default function Events() {
       <div className="container">
         <h2 className="mb-4 text-center">Past & Upcoming Events</h2>
 
-<div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center">
 
           {/* TEDxSetapak 2025 Event Card */}
           <div className="col-md-6">
             <div className="card h-100 bg-dark text-white border-0">
               <div className="card-body">
+                  <img
+                    src={EventMines}
+                    alt="TEDxSetapak MINES Event"
+                    className="img-fluid mb-3"
+                    style={{ maxHeight: "200px", objectFit: "cover" }}
+                  />
                 <h2 className="card-title">
                   <span>M.I.N.E.S</span>
                 </h2>

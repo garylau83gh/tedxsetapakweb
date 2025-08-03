@@ -10,6 +10,7 @@ import Kim from "../image/kim.png";
 import Mannisa from "../image/mannisa.png";
 import Clement from "../image/clementong.png";
 import Sharon from "../image/sharon.png";
+import Rachel from "../image/rachel.png";
 
 const speakers = [
   {
@@ -89,13 +90,11 @@ Her mission? To empower you to live a little better, one self-discovery at a tim
 His message? Shift from thinking to doing, and surround yourself with people who push you to grow.
 Because real progress doesn’t happen alone ~ it happens in motion, and in community.`
 },{
-  name: "Sharon Foo Lee Chin",
+  name: "Rachel Ang",
   role: "Speaker",
-  image: Sharon,
+  image: Rachel,
   title: "Everything Everywhere All At Once … Overwhelmed Moms",
-  description: `Sharon Foo Lee Chin advocates for a healthier, happier world ~ starting with you.
-Her message is simple yet powerful: Don’t over-jam your schedule. Pause. Breathe. Make space for self-love, because the greatest gift you can give your family is a healthy, joyful you.
-It’s not just about work-life balance ~ it’s about work-life harmony.`
+  description: `Rachael Ang believes that true success begins with emotional healing. When we reconnect with our inner child and restore the love we didn’t know we were missing, we transform not only our mindset, but our relationships, our choices, and our entire future. Healing is not a weakness – it’s the most powerful act of self-leadership.`
 }
 ];
 
