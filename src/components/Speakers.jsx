@@ -1,5 +1,6 @@
 import React from "react";
-import Speaker1 from "../image/blank.png"; // Replace with actual image paths
+import "./Team.css";
+
 import Emily from "../image/emily.png";
 import JinYang from "../image/jinyang.png";
 import Zhennee from "../image/zhen.png";
@@ -15,7 +16,7 @@ import Rachel from "../image/rachel.png";
 const speakers = [
   {
     name: "Mannisa Lee",
-    role: "Speaker",
+    role: "Community Educator, Storyteller, Entrepreneur",
     image: Mannisa,
     title: "The Power Of Saying 'Yes!' First",
     description:
@@ -32,7 +33,7 @@ const speakers = [
   },
   {
     name: "Low Kim Ching",
-    role: "Speaker",
+    role: "The Resilient STORYteller. Rewriting the story, one truth at a time.",
     image: Kim,
     title: "Rebirth - A Journey From Trauma to Transformation",
     description: `Meet Low Kim Ching ~ Educator, Corporate Speaker & Passionate Public Speaking Coach for kids and teens.
@@ -50,7 +51,7 @@ Now an emcee and a part-time coach at MicFront Damansara, he’s inspiring the n
   },
   {
     name: "Dr. Saraswathy Thurairaj",
-    role: "Speaker",
+    role: "Assistant Professor at Universiti Tunku Abdul Rahman",
     image: Saras,
     title: "The Secret Superpower for Work and Life: Emotional Intelligence",
     description: `Dr. Saraswathy Thurairaj believes emotional intelligence is the superpower that transforms how we think, connect, and lead.
@@ -59,7 +60,7 @@ Her talk equips you with practical tools to lead with empathy, communicate deepl
   },
   {
     name: "Eva Ng Tsiu Wen",
-    role: "Speaker",
+    role: "Truth-Seeker in High Heels",
     image: Eva,
     title: "Homecoming: A New Way of Seeing",
     description: `Eva Ng Tsiu Wen reminds us that authenticity isn’t about changing who we are ~ it’s about remembering who we've always been.
@@ -68,7 +69,7 @@ Her message: Speak in your own voice ~ that’s where real connection begins.`
   },
   {
     name: "Gan Zhen Nee",
-    role: "Speaker",
+    role: "Financial Advisor",
     image: Zhennee,
     title: "You Can Lose Money and Still Win",
     description: `Gan Zhen Nee believes that failure isn’t the end ~ it’s feedback.
@@ -77,7 +78,7 @@ This talk is a gentle, empowering reminder that the greatest returns come when w
   },
   {
     name: "Emily Cheah Foong Kwan",
-    role: "Speaker",
+    role: "Destiny Consultant & Life Coach",
     image: Emily,
     title: "How Changing the Question You Ask Yourself, Changes Your Life",
     description: `Emily Cheah Foong Kwan ~ Destiny Consultant & Life Coach ~ helps people uncover the real reason they feel stuck: the inner blocks they’ve placed themselves.
@@ -95,7 +96,7 @@ Because real progress doesn’t happen alone ~ it happens in motion, and in comm
   },
   {
     name: "Rachel Ang",
-    role: "Speaker",
+    role: "Author of A Path to Healing, Mental health speaker, Licensed Counsellor, and founder of Teaffani Catering",
     image: Rachel,
     title: "Dare to Dissappoint",
     description: `Rachael Ang believes that true success begins with emotional healing. When we reconnect with our inner child and restore the love we didn’t know we were missing, we transform not only our mindset, but our relationships, our choices, and our entire future. Healing is not a weakness – it’s the most powerful act of self-leadership.`
@@ -119,9 +120,9 @@ export default function Speakers() {
                     className="rounded-circle mb-3 mx-auto"
                     style={{ width: "200px", height: "200px", objectFit: "cover" }}
                   />
-                  <h3 className="text-lg fw-bold text-white">{speaker.name}</h3>
-				          <p className="text-sm text-purple-600 font-medium mb-1">{speaker.role}</p>
-                  <h5 className="text-base fw-semibold text-light">{speaker.title}</h5>
+                  <h5 className="fw-normal mb-1" style={{ color: '#FFD166' }}>{speaker.role}</h5>
+                  <h4 className="fw-bold mb-1" style={{ color: '#FFFFFF' }}>{speaker.name}</h4>
+                  <h6 className="fw-semibold text-light mb-2">{speaker.title}</h6>
                   <p className="text-sm small text-light mt-2">{speaker.description}</p>
                 </div>
               </div>

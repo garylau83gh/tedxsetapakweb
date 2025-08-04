@@ -18,15 +18,21 @@ const leadCurators = [
   {
     name: "Soh Chean Fai",
     role: "Lead Organizer & Curator",
+    career: "Accountant to Dance Instructor to Public Speaking Coach",
+    education: "BA (Hon) Accountancy, SFDF (SG) Dance certification",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Cheanfai,
     description: "Drives the team with vision and coordination.",
-    funFact: "Loves making spreadsheets for fun.",
+    funFact: "Beach cleaning activity, hiking, coffee + book and dancing.",
     email: "cheanfai@yahoo.com",
     linkedin: "https://www.linkedin.com/in/cheanfai-soh-8638141aa/"
   },
   {
     name: "Arafah",
     role: "Co-Curator",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Arafah,
     description: "Curates inspiring ideas and speakers.",
     funFact: "Can finish a novel in a day.",
@@ -38,6 +44,9 @@ const creativeTeam = [
   {
     name: "Patricia Lim",
     role: "Communications, Editorial & Marketing Director",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Patricia,
     description: "Crafts the message and spreads the word.",
     funFact: "Has a collection of quirky mugs.",
@@ -46,6 +55,9 @@ const creativeTeam = [
   {
     name: "Elaine Soo",
     role: "Designer and Visual Director",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Elaine,
     description: "Designs the visuals that wow.",
     funFact: "Can sketch portraits in under 10 minutes.",
@@ -54,9 +66,16 @@ const creativeTeam = [
   {
     name: "Gary Lau",
     role: "Website Manager",
+    career: "Software Engineer",
+    education: "Bsc (Hons) Computing",
+    quote: `Tell my tale to those who asked. 
+    tell them truly, 
+    the ill deeds along with the good, 
+    and let me be judged accordingly. 
+    The rest is silence.`,
     image: Gary,
     description: "Maintains our digital home.",
-    funFact: "Collects quirky domain names.",
+    funFact: "Loves coffee but also immune to coffee",
     email: "garylau.80s@gmail.com",
     linkedin: "https://www.linkedin.com/in/gary-lau-3449a8275/"
   }
@@ -66,6 +85,9 @@ const productionTeam = [
   {
     name: "Chelsey Siew",
     role: "Executive Producer",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Chelsey,
     description: "Oversees the magic behind the scenes.",
     funFact: "Is a pro at claw machines.",
@@ -75,14 +97,21 @@ const productionTeam = [
   {
     name: "Rodric Chan",
     role: "Production Lead",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Rodric,
     description: "Maintains our digital home.",
     funFact: "Collects quirky domain names.",
-    instagram: "https://www.instagram.com/rodric_chan/"
+    email: "garylau.80s@gmail.com",
+    linkedin: "https://www.linkedin.com/in/gary-lau-3449a8275/"
   },
   {
     name: "Loh Wei Ning",
     role: "Event Host",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Weining,
     description: "Brings energy and warmth on stage.",
     funFact: "Never misses a morning coffee.",
@@ -92,6 +121,9 @@ const productionTeam = [
   {
     name: "Samantha Yong",
     role: "Event Manager",
+    career: "Production Lead",
+    education: "Bsc (Hons) Computing",
+    quote: "Pause, Reflect, Renew, Show Up",
     image: Samantha,
     description: "Master planner of timelines and logistics.",
     funFact: "Bakes a killer cheesecake.",
@@ -114,10 +146,19 @@ function TeamRow({ title, members }) {
                 style={{ width: "200px", height: "200px", objectFit: "cover" }}
               />
               <div>
+                <h5 className="fw-normal mb-1" style={{ color: '#FFD166' }}>{member.role}</h5>
                 <h4 className="fw-bold mb-1" style={{ color: '#FFFFFF' }}>{member.name}</h4>
-                <h5 className="fw-normal mb-2" style={{ color: '#FFD166' }}>{member.role}</h5>
+                {member.career && (
+                  <p className="mb-3 small">{member.career}</p>
+                )}
+                {member.education && (
+                  <p className="mb-3 small"> {member.education}</p>
+                )}
                 <p className="mb-1 small">{member.description}</p>
-                <p className="mb-1 small"><strong>Fun Fact:</strong> {member.funFact}</p>
+                <p className="mb-3 small"><strong>Fun Fact:</strong> {member.funFact}</p>
+                {member.quote && (
+                  <p className="mb-1 small fst-italic text-warning">“{member.quote}”</p>
+                )}
                 <div className="d-flex gap-3 mt-2">
                   {member.email && (
                     <a href={`mailto:${member.email}`} style={{ color: "#fff" }}>
