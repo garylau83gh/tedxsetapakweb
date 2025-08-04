@@ -5,11 +5,11 @@ import "./Schedule.css";
 const scheduleItems = [
   { time: "8:30 – 9:00 AM", title: "Registration & Networking" },
   { time: "9:00 – 9:15 AM", title: "Opening Ceremony & Welcome Address by Organiser" },
-  { time: "9:15 – 10:15 AM", title: "Session 1: 3 Speakers" },
+  { time: "9:15 – 10:15 AM", title: "Session 1 Speakers\nClement Ong\nKim Low\nChong Jing Yang" },
   { time: "10:15 – 10:35 AM", title: "Break (Bio & Coffee)" },
-  { time: "10:35 – 12:25 PM", title: "Session 2: 5 Speakers" },
+  { time: "10:35 – 12:25 PM", title: "Session 2 Speakers\nDr Saraswathy\nRachael Ang\nAng Wee Kien" },
   { time: "12:25 – 12:45 PM", title: "Break (Bio & Coffee)" },
-  { time: "12:45 – 1:45 PM", title: "Session 3: 3 Speakers" },
+  { time: "12:45 – 1:45 PM", title: "Session 3 Speakers\nEva Ng\nGan Zhen Nee\nMannisa Lee" },
   {
     time: "1:45 – 2:00 PM",
     title: "Closing Remarks & Appreciation\nGroup photo session & Networking",

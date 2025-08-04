@@ -12,11 +12,12 @@ import Elaine from "../image/elaine_formal.png";
 import Samantha from "../image/samantha_formal.png";
 import Cheanfai from "../image/cheanfai_formal.png";
 import Arafah from "../image/arafah_formal.png";
+import Rodric from "../image/rodric_formal.png";
 
-const teamMembers = [
+const leadCurators = [
   {
     name: "Soh Chean Fai",
-    role: "Team Lead",
+    role: "Lead Organizer & Curator",
     image: Cheanfai,
     description: "Drives the team with vision and coordination.",
     funFact: "Loves making spreadsheets for fun.",
@@ -30,10 +31,13 @@ const teamMembers = [
     description: "Curates inspiring ideas and speakers.",
     funFact: "Can finish a novel in a day.",
     email: "arafahzaharah@gmail.com"
-  },
+  }
+];
+
+const creativeTeam = [
   {
     name: "Patricia Lim",
-    role: "Communication & Marketing Director",
+    role: "Communications, Editorial & Marketing Director",
     image: Patricia,
     description: "Crafts the message and spreads the word.",
     funFact: "Has a collection of quirky mugs.",
@@ -48,8 +52,37 @@ const teamMembers = [
     email: "elainemarmora@gmail.com"
   },
   {
+    name: "Gary Lau",
+    role: "Website Manager",
+    image: Gary,
+    description: "Maintains our digital home.",
+    funFact: "Collects quirky domain names.",
+    email: "garylau.80s@gmail.com",
+    linkedin: "https://www.linkedin.com/in/gary-lau-3449a8275/"
+  }
+];
+
+const productionTeam = [
+  {
+    name: "Chelsey Siew",
+    role: "Executive Producer",
+    image: Chelsey,
+    description: "Oversees the magic behind the scenes.",
+    funFact: "Is a pro at claw machines.",
+    linkedin: "http://linkedin.com/in/chelseysiew",
+    facebook: "https://www.facebook.com/chelsey.siew"
+  },
+  {
+    name: "Rodric Chan",
+    role: "Production Lead",
+    image: Rodric,
+    description: "Maintains our digital home.",
+    funFact: "Collects quirky domain names.",
+    instagram: "https://www.instagram.com/rodric_chan/"
+  },
+  {
     name: "Loh Wei Ning",
-    role: "Host",
+    role: "Event Host",
     image: Weining,
     description: "Brings energy and warmth on stage.",
     funFact: "Never misses a morning coffee.",
@@ -63,78 +96,67 @@ const teamMembers = [
     description: "Master planner of timelines and logistics.",
     funFact: "Bakes a killer cheesecake.",
     email: "samanthayong_1026@hotmail.com"
-  },
-  {
-    name: "Chelsey Siew",
-    role: "Executive Producer",
-    image: Chelsey,
-    description: "Oversees the magic behind the scenes.",
-    funFact: "Is a pro at claw machines.",
-    linkedin: "http://linkedin.com/in/chelseysiew",
-    facebook: "https://www.facebook.com/chelsey.siew"
-  },
-  {
-    name: "Gary Lau",
-    role: "Web Manager",
-    image: Gary,
-    description: "Maintains our digital home.",
-    funFact: "Collects quirky domain names.",
-    email: "garylau.80s@gmail.com",
-    linkedin: "https://www.linkedin.com/in/gary-lau-3449a8275/"
   }
 ];
+
+function TeamRow({ title, members }) {
+  return (
+    <div className="mb-5">
+      {title && <h3 className="text-center text-warning mb-4">{title}</h3>}
+      <div className="row justify-content-center g-4">
+        {members.map((member, index) => (
+          <div key={index} className="col-md-6 d-flex">
+            <div className="team-card d-flex flex-column flex-md-row align-items-center bg-dark p-4 rounded shadow w-100">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="team-photo mb-3 mb-md-0 me-md-4 rounded-circle"
+                style={{ width: "200px", height: "200px", objectFit: "cover" }}
+              />
+              <div>
+                <h4 className="fw-bold mb-1" style={{ color: '#FFFFFF' }}>{member.name}</h4>
+                <h5 className="fw-normal mb-2" style={{ color: '#FFD166' }}>{member.role}</h5>
+                <p className="mb-1 small">{member.description}</p>
+                <p className="mb-1 small"><strong>Fun Fact:</strong> {member.funFact}</p>
+                <div className="d-flex gap-3 mt-2">
+                  {member.email && (
+                    <a href={`mailto:${member.email}`} style={{ color: "#fff" }}>
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
+                  )}
+                  {member.facebook && (
+                    <a href={member.facebook} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                  )}
+                  {member.instagram && (
+                    <a href={member.instagram} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Team() {
   return (
     <section id="team" className="team-section text-white bg-black py-5">
       <div className="container">
         <h2 className="mb-4 text-center">Meet The Team</h2>
-        <div className="row justify-content-center g-4">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="col-md-6 d-flex">
-              <div className="team-card d-flex flex-column flex-md-row align-items-center bg-dark p-4 rounded shadow w-100">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="team-photo mb-3 mb-md-0 me-md-4 rounded-circle"
-                  style={{ width: "200px", height: "200px", objectFit: "cover" }}
-                />
-                <div>
-                  <h4 className="fw-bold mb-1" style={{ color: '#FFFFFF' }}>
-                    {member.name}
-                  </h4>
-                  <h5 className="fw-normal mb-2" style={{ color: '#FFD166' }}>
-                    {member.role}
-                  </h5>
-                  <p className="mb-1 small">{member.description}</p>
-                  <p className="mb-1 small"><strong>Fun Fact:</strong> {member.funFact}</p>
-                  <div className="d-flex gap-3 mt-2">
-                    {member.email && (
-                      <a href={`mailto:${member.email}`} style={{ color: "#fff" }}>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                      </a>
-                    )}
-                    {member.linkedin && (
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                      </a>
-                    )}
-                    {member.facebook && (
-                      <a href={member.facebook} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
-                        <FontAwesomeIcon icon={faFacebookF} />
-                      </a>
-                    )}
-                    {member.instagram && (
-                      <a href={member.instagram} target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
-                        <FontAwesomeIcon icon={faInstagram} />
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <TeamRow title="Leads & Curators" members={leadCurators} />
+        <TeamRow title="Creative & Tech" members={creativeTeam} />
+        <TeamRow title="Production & Events" members={productionTeam} />
       </div>
     </section>
   );

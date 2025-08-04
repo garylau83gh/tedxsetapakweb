@@ -13,13 +13,14 @@ export default function Events() {
           {/* TEDxSetapak 2025 Event Card */}
           <div className="col-md-6">
             <div className="card h-100 bg-dark text-white border-0">
-              <div className="card-body">
-                  <img
-                    src={EventMines}
-                    alt="TEDxSetapak MINES Event"
-                    className="img-fluid mb-3"
-                    style={{ maxHeight: "200px", objectFit: "cover" }}
-                  />
+              {/* Full-width image */}
+              <img
+                src={EventMines}
+                alt="TEDxSetapak MINES Event"
+                className="card-img-top"
+                style={{ objectFit: "cover", maxHeight: "240px" }}
+              />
+              <div className="card-body text-center">
                 <h2 className="card-title">
                   <span>M.I.N.E.S</span>
                 </h2>
@@ -34,17 +35,15 @@ export default function Events() {
                       window.location.hostname === "localhost"
                         ? "http://localhost:3000/#/event/theme"
                         : "https://garylau83gh.github.io/tedxsetapakweb/#/event/theme";
-
                     window.open(base, "_blank");
-                  }} 
+                  }}
                 >
                   View Event
                 </button>
-
-
               </div>
             </div>
           </div>
+
           
         </div>
       </div>

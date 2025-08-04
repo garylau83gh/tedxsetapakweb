@@ -47,7 +47,8 @@ Her core belief: "Change your mindset, change your lift."`
     description: `Meet Chong Jin Yang ~ a junior engineer from Cheras with unstoppable dedication to growth.
 He walks an hour every weekend and braves traffic every other Tuesday just to sharpen his public speaking skills.
 Now an emcee and a part-time coach at MicFront Damansara, he’s inspiring the next generation of speakers, one session at a time.`
-  },  {
+  },
+  {
     name: "Dr. Saraswathy Thurairaj",
     role: "Speaker",
     image: Saras,
@@ -64,69 +65,70 @@ Her talk equips you with practical tools to lead with empathy, communicate deepl
     description: `Eva Ng Tsiu Wen reminds us that authenticity isn’t about changing who we are ~ it’s about remembering who we've always been.
 When we stop trying to fit in and start giving ourselves permission to be different, we reclaim our voice, our space, and our truth.
 Her message: Speak in your own voice ~ that’s where real connection begins.`
-  },{
-  name: "Gan Zhen Nee",
-  role: "Speaker",
-  image: Zhennee,
-  title: "You Can Lose Money and Still Win",
-  description: `Gan Zhen Nee believes that failure isn’t the end ~ it’s feedback.
+  },
+  {
+    name: "Gan Zhen Nee",
+    role: "Speaker",
+    image: Zhennee,
+    title: "You Can Lose Money and Still Win",
+    description: `Gan Zhen Nee believes that failure isn’t the end ~ it’s feedback.
 Her message is simple but transformative: reinvest in yourself. Even when things fall apart, you’re never too broken to begin again.
 This talk is a gentle, empowering reminder that the greatest returns come when we stop chasing validation and start coming home to ourselves.`
-},
-{
-  name: "Emily Cheah Foong Kwan",
-  role: "Speaker",
-  image: Emily,
-  title: "How Changing the Question You Ask Yourself, Changes Your Life",
-  description: `Emily Cheah Foong Kwan ~ Destiny Consultant & Life Coach ~ helps people uncover the real reason they feel stuck: the inner blocks they’ve placed themselves.
+  },
+  {
+    name: "Emily Cheah Foong Kwan",
+    role: "Speaker",
+    image: Emily,
+    title: "How Changing the Question You Ask Yourself, Changes Your Life",
+    description: `Emily Cheah Foong Kwan ~ Destiny Consultant & Life Coach ~ helps people uncover the real reason they feel stuck: the inner blocks they’ve placed themselves.
 By simply reframing the question, she guides others to find their own answers ~ unlocking clarity, confidence, and purpose.
 Her mission? To empower you to live a little better, one self-discovery at a time.`
-},{
-  name: "Ken Ang Wee Kien",
-  role: "Speaker",
-  image: Weekien,
-  title: "How to Start Building a Personal Brand Before You Feel Ready",
-  description: `Ken Ang Wee Kien knows that your brand doesn’t begin when you feel ready ~ it begins the moment you take action.
+  },
+  {
+    name: "Ken Ang Wee Kien",
+    role: "Speaker",
+    image: Weekien,
+    title: "How to Start Building a Personal Brand Before You Feel Ready",
+    description: `Ken Ang Wee Kien knows that your brand doesn’t begin when you feel ready ~ it begins the moment you take action.
 His message? Shift from thinking to doing, and surround yourself with people who push you to grow.
 Because real progress doesn’t happen alone ~ it happens in motion, and in community.`
-},{
-  name: "Rachel Ang",
-  role: "Speaker",
-  image: Rachel,
-  title: "Everything Everywhere All At Once … Overwhelmed Moms",
-  description: `Rachael Ang believes that true success begins with emotional healing. When we reconnect with our inner child and restore the love we didn’t know we were missing, we transform not only our mindset, but our relationships, our choices, and our entire future. Healing is not a weakness – it’s the most powerful act of self-leadership.`
-}
+  },
+  {
+    name: "Rachel Ang",
+    role: "Speaker",
+    image: Rachel,
+    title: "Dare to Dissappoint",
+    description: `Rachael Ang believes that true success begins with emotional healing. When we reconnect with our inner child and restore the love we didn’t know we were missing, we transform not only our mindset, but our relationships, our choices, and our entire future. Healing is not a weakness – it’s the most powerful act of self-leadership.`
+  }
 ];
 
 export default function Speakers() {
   return (
-<section id="speakers" style={{ backgroundColor: "#000" }} className="text-white py-5">
-  <div className="container">
-    <h2 className="text-center mb-5">Speakers</h2>
+    <section id="speakers" className="text-white py-5" >
+      <div className="container">
+        <h2 className="text-center mb-5">Speakers</h2>
 
-    <div className="row justify-content-center g-4">
-      {speakers.map((speaker, index) => (
-        <div className="col-md-6 col-lg-4 d-flex" key={index}>
-          <div className="card profile-card shadow bg-light text-dark w-100 h-100">
-            <div className="card-body text-center d-flex flex-column">
-              <img
-                src={speaker.image}
-                alt={speaker.name}
-                className="rounded-circle mb-3 mx-auto"
-                style={{ width: "100px", height: "100px", objectFit: "cover" }}
-              />
-              <h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
-              <p className="text-sm text-purple-600 font-medium mb-1">{speaker.role}</p>
-              <h5 className="text-base font-semibold text-gray-800">{speaker.title}</h5>
-              <p className="text-sm small text-gray-600 mt-2">{speaker.description}</p>
+        <div className="row justify-content-center g-4">
+          {speakers.map((speaker, index) => (
+            <div className="col-md-6 col-lg-4 d-flex" key={index}>
+              <div className="card profile-card shadow bg-dark text-white w-100 h-100">
+                <div className="card-body text-left d-flex flex-column">
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="rounded-circle mb-3 mx-auto"
+                    style={{ width: "200px", height: "200px", objectFit: "cover" }}
+                  />
+                  <h3 className="text-lg fw-bold text-white">{speaker.name}</h3>
+				          <p className="text-sm text-purple-600 font-medium mb-1">{speaker.role}</p>
+                  <h5 className="text-base fw-semibold text-light">{speaker.title}</h5>
+                  <p className="text-sm small text-light mt-2">{speaker.description}</p>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
   );
 }
-
-

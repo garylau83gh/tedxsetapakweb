@@ -22,3 +22,10 @@
   max-height: 100px;
   object-fit: contain;
 }
+
+.social-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
