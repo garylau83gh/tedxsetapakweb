@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tedxsetapakweb/static/css/main.4241a90f.css",
-    "main.js": "/tedxsetapakweb/static/js/main.87729194.js",
+    "main.css": "/tedxsetapakweb/static/css/main.f460c2c3.css",
+    "main.js": "/tedxsetapakweb/static/js/main.2b8adebc.js",
     "static/media/weining_formal.png": "/tedxsetapakweb/static/media/weining_formal.c96b499b790b1d5da38e.png",
     "static/media/spash_00.jpg": "/tedxsetapakweb/static/media/spash_00.c0ea623c3f183f1d71bf.jpg",
     "static/media/spash_01.jpg": "/tedxsetapakweb/static/media/spash_01.e59eb7fed1d2d5f1e28d.jpg",
@@ -10,6 +10,7 @@
     "static/media/TARUMT.png": "/tedxsetapakweb/static/media/TARUMT.b0bf415cff2f38c614f0.png",
     "static/media/samantha_formal.png": "/tedxsetapakweb/static/media/samantha_formal.6047729dd9f449829fa4.png",
     "static/media/event_mines.png": "/tedxsetapakweb/static/media/event_mines.30c513c32bf1998fc118.png",
+    "static/media/rodric_formal.png": "/tedxsetapakweb/static/media/rodric_formal.204cdf7882a4d637148d.png",
     "static/media/arafah_formal.png": "/tedxsetapakweb/static/media/arafah_formal.9ad97fb7745279132331.png",
     "static/media/rachel.png": "/tedxsetapakweb/static/media/rachel.746aaa2bcfcc91c15ace.png",
     "static/media/kim.png": "/tedxsetapakweb/static/media/kim.1ab4d376f292d0e57552.png",
@@ -32,11 +33,11 @@
     "static/media/logo-white.png": "/tedxsetapakweb/static/media/logo-white.41826f2bcd8423b11862.png",
     "static/media/zhen.png": "/tedxsetapakweb/static/media/zhen.11163f88aece52123ba4.png",
     "index.html": "/tedxsetapakweb/index.html",
-    "main.4241a90f.css.map": "/tedxsetapakweb/static/css/main.4241a90f.css.map",
-    "main.87729194.js.map": "/tedxsetapakweb/static/js/main.87729194.js.map"
+    "main.f460c2c3.css.map": "/tedxsetapakweb/static/css/main.f460c2c3.css.map",
+    "main.2b8adebc.js.map": "/tedxsetapakweb/static/js/main.2b8adebc.js.map"
   },
   "entrypoints": [
-    "static/css/main.4241a90f.css",
-    "static/js/main.87729194.js"
+    "static/css/main.f460c2c3.css",
+    "static/js/main.2b8adebc.js"
   ]
 }
